@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+<body>
+
+<div ng-app = "" ng-init = "countries = [{locale:'en-US',name:'United States'}, {locale:'en-GB',name:'United Kingdom'}, {locale:'en-FR',name:'France'}]">
+  <p>My first expression: {{ 13 + 5 }} </p>
+
+         <label>Name:</label>
+         <input type = "text" ng-model = "yourName" placeholder = "Enter a name here">
+         <hr />
+         
+         <p ng-bind="yourName">Hello:</p>
+
+
+
+         <p>Enter your Name: <input type = "text" ng-model = "name"></p>
+         <p>Hello <span ng-bind = "name"></span>!</p>
+     
+
+
+
+      </div>
+</body>
+</html>
